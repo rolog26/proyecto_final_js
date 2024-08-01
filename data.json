@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Matías",
+        "sector": "Microsoldadura"
+    },
+    {
+        "nombre":"Laura",
+        "sector": "Software"
+    },
+    {
+        "nombre": "Rodrigo",
+        "sector": "Mantenimiento y limpieza"
+    },
+    {
+        "nombre": "Martina",
+        "sector": "Mantenimiento y limpieza"
+    }
+]

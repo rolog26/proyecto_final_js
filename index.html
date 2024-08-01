@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Página para comprar productos que tenemos en nuestro local para complementar tus dispositivos electrónicos.">
+    <meta name="keywords" content="htz, insumos, productos, articulos, cargadores, cables, celulares">
+    <title>Registro de clientes</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img class="logo" src="images/logo-HTZ-1.png" alt="Logo de HTZ Servicio Técnico.">
+        </div>
+
+        <div class="titulo">
+            <h1>Servicio Técnico</h1>
+            <h2>Tu tecnología, nuestra pasión</h2>
+            <button id="modo">Modo </button>
+        </div>
+
+    </header>
+
+    <main>
+        <h3>Registro de clientes</h3>
+        <div id="registro">
+            <form id="clientes">
+                <label for="ingreso">Ingreso</label>
+                <input type="date" id="ingreso" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <label for="numero">Número</label>
+                <input type="number" id="numero" required>
+                <label for="dispositivo">Dispositivo</label>
+                <input type="text" id="dispositivo" required>
+                <label for="diagnostico">Diagnóstico</label>
+                <input type="text" id="diagnostico" required>
+                <label for="presupuesto">Presupuesto</label>
+                <input type="number" id="presupuesto" required>
+                <label for="encargado">Encargado de reparación</label>
+                <select type="text" id="encargado" required>
+                </select>
+                <label for="estado">Estado de reparación</label>
+                <select type="text" id="estado" required>
+                    <option value="Presupuestar">Presupuestar</option>
+                    <option value="En proceso">En proceso</option>
+                    <option value="Finalizado">Finalizado</option>
+                    <option value="Entregado">Entregado</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+                <button type="submit">Agregar cliente</button>
+            </form>
+        </div>
+        <h3>Lista de clientes registrados</h3>
+        <div id="busqueda">
+            <input type="text" id="clienteABuscar" placeholder="Nombre o ID del cliente">
+            <button id="botonBuscar">Buscar</button>
+        </div>
+            <div id="resultadoBusqueda">
+            </div>
+        <div id="registrados">
+        </div>
+
+        <footer>
+            <h4>Todos los derechos reservados</h4>
+        </footer>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./main.js"></script>
+
+</html>
